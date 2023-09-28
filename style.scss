@@ -1,0 +1,275 @@
+$background-color : rgb(212, 230, 241);
+$background-aside-color : rgb(169, 204, 227 );
+$color1 : rgb(43, 130, 196);
+$color2 : rgb(53, 79, 146);
+$color2-hover : rgb(107, 126, 170);
+$color3 : #DEEBFF;
+
+li, ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    "aside header"
+    "aside main";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+    border: 4px solid $color1;
+    border-radius: 10px;
+    
+
+    h1 {
+        color: $color2;
+        font-size: 4vw;
+    }
+    
+    h2 {
+        color: $color2;
+        font-size: 3.5vw;
+    }
+    
+    p {
+        font-size: 1.5vw;
+    }
+
+}
+
+main {
+    grid-area: main;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 3vw;
+            color: $color2;
+        }
+
+        .experience {
+            width: 100%;
+            height: 40vw;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid black;
+
+            #fleche {
+                position: absolute;
+                z-index: 1;
+                width: 50vw;
+                height: 35vw;
+                margin-left: 10%;
+                margin-top: 2%;
+                padding: 1vw;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                pointer-events: none;
+                border: 1px solid black;
+                
+                img {
+                    width: 10%;
+                    pointer-events: all;
+                    border: 1px solid black;
+
+                    &:active {
+                        border-color: red;
+                    }
+                }
+
+                #gauche {
+                    transform: scaleX(-1);
+                }
+            }
+
+            
+            a {
+                border-radius: 15px;
+                width: 50vw;
+                height: 35vw;
+                background-color: $color3;
+                transition: transform 1s;
+                padding: 1vw;
+                border: 1px solid black;
+                
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.05);
+                    background-color: $color2-hover;
+                }
+
+                div {
+                    display: flex;
+
+                    p {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        width: 20%;
+                    }
+                    
+                    h3 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 2.3vw;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 2vw;
+
+                    // li {
+
+                    // }
+                }
+            }
+        }
+
+        #scrimbox-ean {
+            position: absolute;
+            margin-left: 10%;
+            margin-top: 2%;
+        }
+
+        #kasa {
+            position: absolute;
+            margin-left: 100%;
+        }
+
+        #piiquante {
+            position: absolute;
+            margin-left: 200%;
+        }
+
+        #kanap {
+            position: absolute;
+            margin-left: 300%;
+        }
+
+        #ohmyfood {
+            position: absolute;
+            margin-left: 400%;
+        }
+
+        #booki {
+            position: absolute;
+            margin-left: 500%;
+        }
+
+        #paysagiste {
+            position: absolute;
+            margin-left: 600%;
+        }
+
+        #maçon {
+            position: absolute;
+            margin-left: 700%;
+        }
+
+        .formation {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+
+            a {
+                display: flex;
+                justify-content: space-between;
+                border-radius: 15px;
+                height: 10vw;
+                background-color: $color3;
+                transition: transform 1s;
+                padding: 1vw;
+                
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.05);
+                    background-color: $color2-hover;
+                }
+    
+                p {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    width: 20%;
+                }
+                
+                h3 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 2.3vw;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aside {
+    grid-area: aside;
+    background-color: $background-aside-color;
+    padding-left: 2vw;
+    // border: 4px solid black;
+}

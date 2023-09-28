@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrousel HTML et CSS avec Radio Buttons</title>
+  <style>
+    /* Cacher les boutons radio */
+    .radio-button {
+      display: none;
+    }
+
+    .carousel {
+      width: 300px;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: all 1s ease;
+    }
+
+    .slide {
+      flex: 0 0 300px;
+      height: 200px;
+    }
+
+    /* Utilisation de :checked pour déplacer le carrousel */
+    #radio1:checked ~ .carousel .slides {
+      transform: translateX(0%);
+    }
+
+    #radio2:checked ~ .carousel .slides {
+      transform: translateX(-100%);
+    }
+
+    #radio3:checked ~ .carousel .slides {
+      transform: translateX(-200%);
+    }
+  </style>
+</head>
+<body>
+  <input type="radio" class="radio-button" id="radio1" name="carousel" checked>
+  <input type="radio" class="radio-button" id="radio2" name="carousel">
+  <input type="radio" class="radio-button" id="radio3" name="carousel">
+
+  <div class="carousel">
+    <div class="slides">
+      <div class="slide" style="background-color: red;"></div>
+      <div class="slide" style="background-color: green;"></div>
+      <div class="slide" style="background-color: blue;"></div>
+    </div>
+  </div>
+
+  <label for="radio1">Slide 1</label>
+  <label for="radio2">Slide 2</label>
+  <label for="radio3">Slide 3</label>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@charset "UTF-8";
+li, ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas: "aside header" "aside main";
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw;
+  border: 4px solid rgb(43, 130, 196);
+  border-radius: 10px;
+}
+header h1 {
+  color: rgb(53, 79, 146);
+  font-size: 4vw;
+}
+header h2 {
+  color: rgb(53, 79, 146);
+  font-size: 3.5vw;
+}
+header p {
+  font-size: 1.5vw;
+}
+
+main {
+  grid-area: main;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section h2 {
+  font-size: 3vw;
+  color: rgb(53, 79, 146);
+}
+main section .experience {
+  width: 100%;
+  height: 40vw;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid black;
+}
+main section .experience #fleche {
+  position: absolute;
+  z-index: 1;
+  width: 50vw;
+  height: 35vw;
+  margin-left: 10%;
+  margin-top: 2%;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  border: 1px solid black;
+}
+main section .experience #fleche img {
+  width: 10%;
+  pointer-events: all;
+  border: 1px solid black;
+}
+main section .experience #fleche img:active {
+  border-color: red;
+}
+main section .experience #fleche #gauche {
+  transform: scaleX(-1);
+}
+main section .experience a {
+  border-radius: 15px;
+  width: 50vw;
+  height: 35vw;
+  background-color: #DEEBFF;
+  transition: transform 1s;
+  padding: 1vw;
+  border: 1px solid black;
+}
+main section .experience a:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: rgb(107, 126, 170);
+}
+main section .experience a div {
+  display: flex;
+}
+main section .experience a div p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 20%;
+}
+main section .experience a div h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main section .experience a ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+main section #scrimbox-ean {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+main section #kasa {
+  position: absolute;
+  margin-left: 100%;
+}
+main section #piiquante {
+  position: absolute;
+  margin-left: 200%;
+}
+main section #kanap {
+  position: absolute;
+  margin-left: 300%;
+}
+main section #ohmyfood {
+  position: absolute;
+  margin-left: 400%;
+}
+main section #booki {
+  position: absolute;
+  margin-left: 500%;
+}
+main section #paysagiste {
+  position: absolute;
+  margin-left: 600%;
+}
+main section #maçon {
+  position: absolute;
+  margin-left: 700%;
+}
+main section .formation {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+main section .formation a {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  height: 10vw;
+  background-color: #DEEBFF;
+  transition: transform 1s;
+  padding: 1vw;
+}
+main section .formation a:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: rgb(107, 126, 170);
+}
+main section .formation a p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 20%;
+}
+main section .formation a h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3vw;
+}
+
+aside {
+  grid-area: aside;
+  background-color: rgb(169, 204, 227);
+  padding-left: 2vw;
+}/*# sourceMappingURL=style.css.map */
