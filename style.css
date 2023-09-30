@@ -51,18 +51,42 @@ header h2 {
   font-size: 2vw;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .jsp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+main .jsp .jsp2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  color: rgb(53, 79, 146);
+  border: 1px solid black;
+  padding: 1vw;
+  width: 50%;
+  border-radius: 15px;
+}
+main .jsp .jsp2:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
 main section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main section h2 {
-  font-size: 1.5vw;
-  color: rgb(53, 79, 146);
-}
 main section .formation {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   gap: 2vw;

@@ -62,6 +62,35 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .jsp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        
+        .jsp2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5vw;
+            color: $color2;
+            border: 1px solid black;
+            padding: 1vw;
+            width: 50%;
+            border-radius: 15px;
+            
+            &:hover {
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+            }
+        }
+    }
 
     section {
         display: flex;
@@ -69,13 +98,9 @@ main {
         justify-content: center;
         align-items: center;
 
-        h2 {
-            font-size: 1.5vw;
-            color: $color2;
-        }
 
         .formation {
-            width: 90%;
+            width: 80%;
             display: flex;
             flex-direction: column;
             gap: 2vw;
@@ -112,8 +137,6 @@ main {
         }
     }
 }
-
-
 
 .experience {
     display: flex;
@@ -282,8 +305,6 @@ main {
 }
 
 
-
-
 #radio1:checked ~ .carousel .slides {
     transform: translateX(0%);
 }
@@ -315,7 +336,6 @@ main {
 #radio8:checked ~ .carousel .slides {
     transform: translateX(-700%);
 }
-
 
 aside {
     background-color: $background-aside-color;
