@@ -123,11 +123,19 @@ main section .formation a h3 {
   justify-content: space-between;
   border-radius: 15px;
   background-color: #DEEBFF;
-  transition: transform 1s;
   box-sizing: border-box;
   border: 1px solid black;
 }
-.experience .carousel .slides .slide:hover {
+.experience .carousel .slides .slide .site {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+.experience .carousel .slides .slide .site:hover {
+  border-radius: 15px;
   cursor: pointer;
   background-color: rgb(134, 161, 231);
 }
@@ -145,6 +153,20 @@ main section .formation a h3 {
 .experience .carousel .slides .slide .titre h3 {
   font-size: 1.3vw;
   flex-wrap: wrap;
+}
+.experience .carousel .slides .slide .github {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px 0px black, -3px -3px 5px 0px gray;
+  position: absolute;
+  margin-top: 30%;
+  width: 30%;
+}
+.experience .carousel .slides .slide .github:hover {
+  background-color: #a9a9a9;
+}
+.experience .carousel .slides .slide .github img {
+  width: 100%;
 }
 .experience .carousel .slides .slide .liste {
   display: flex;

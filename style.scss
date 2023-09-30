@@ -145,15 +145,24 @@ main {
                 justify-content: space-between;
                 border-radius: 15px;
                 background-color: $color3;
-                transition: transform 1s;
                 box-sizing: border-box;
                 border: 1px solid black;
                 
-
-                &:hover {
-                    cursor: pointer;
-                    background-color: $color2-hover;
+                .site {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                    
+                    &:hover {
+                        border-radius: 15px;
+                        cursor: pointer;
+                        background-color: $color2-hover;
+                    }
                 }
+
 
                 .titre {
                     display: flex;
@@ -172,22 +181,23 @@ main {
                         flex-wrap: wrap;
                     }
                 }
-
-                // .github {
-                //     width: 95%;
-                //     height: 20%;
-                //     background-color: #ffffff;
-                //     border-radius: 15px;
-                //     box-shadow: 3px 3px 5px 0px black, -3px -3px 5px 0px gray;
-
-                //     &:hover {
-                //         background-color: #a9a9a9;
-                //     }
-
-                //     img {
-                //         width: 20vw;
-                //     }
-                // }
+                
+                .github {
+                    background-color: #ffffff;
+                    border-radius: 15px;
+                    box-shadow: 3px 3px 5px 0px black, -3px -3px 5px 0px gray;
+                    position: absolute;
+                    margin-top: 30%;
+                    width: 30%;
+                    
+                    &:hover {
+                        background-color: #a9a9a9;
+                    }
+                    
+                    img {
+                        width: 100%;
+                    }
+                }
                 
                 .liste {
                     display: flex;
@@ -251,6 +261,7 @@ main {
             }
         }
     }
+
     .label {
         display: flex;
         justify-content: space-between;
