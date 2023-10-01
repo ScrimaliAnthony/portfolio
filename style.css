@@ -12,35 +12,42 @@ a {
 }
 
 img {
-  width: 75px;
-  height: 75px;
+  width: 4vw;
+  height: 4vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.radio-button {
+  display: none;
+}
+
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row-reverse;
   font-family: "Montserrat-Regular";
+  width: 100vw;
+  height: 100vh;
 }
 body .principal {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: space-between;
+  height: 100%;
 }
 
 header {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  height: 10%;
-  width: 80%;
+  height: 14vw;
+  width: 66vw;
   align-items: center;
-  border: 4px solid rgb(43, 130, 196);
-  border-radius: 10px;
+  border: 0.25vw solid rgb(43, 130, 196);
+  border-radius: 1%;
 }
 header h1 {
   color: rgb(53, 79, 146);
@@ -50,21 +57,24 @@ header h2 {
   color: rgb(53, 79, 146);
   font-size: 2vw;
 }
+header p {
+  font-size: 1.1vw;
+}
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .jsp {
+main .choix {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 66vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
-main .jsp .jsp2 {
+main .choix .choix2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,10 +82,10 @@ main .jsp .jsp2 {
   color: rgb(53, 79, 146);
   border: 1px solid black;
   padding: 1vw;
-  width: 50%;
+  width: 33vw;
   border-radius: 15px;
 }
-main .jsp .jsp2:hover {
+main .choix .choix2:hover {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
@@ -86,7 +96,7 @@ main section {
   align-items: center;
 }
 main section .formation {
-  width: 80%;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   gap: 2vw;
@@ -99,6 +109,8 @@ main section .formation a {
   background-color: #DEEBFF;
   transition: transform 1s;
   padding: 1vw;
+  box-sizing: border-box;
+  border: 1px solid black;
 }
 main section .formation a:hover {
   cursor: pointer;
@@ -110,6 +122,7 @@ main section .formation a p {
   justify-content: start;
   align-items: center;
   width: 20%;
+  font-size: 1.2vw;
 }
 main section .formation a h3 {
   display: flex;
@@ -123,11 +136,8 @@ main section .formation a h3 {
   flex-direction: column;
   align-items: center;
 }
-.experience .radio-button {
-  display: none;
-}
 .experience .carousel {
-  width: 80%;
+  width: 66vw;
   height: 24vw;
   overflow: hidden;
 }
@@ -183,14 +193,14 @@ main section .formation a h3 {
   border-radius: 15px;
   box-shadow: 3px 3px 5px 0px black, -3px -3px 5px 0px gray;
   position: absolute;
-  margin-top: 30%;
-  width: 30%;
+  margin-top: 27%;
 }
 .experience .carousel .slides .slide .github:hover {
   background-color: #a9a9a9;
 }
 .experience .carousel .slides .slide .github img {
-  width: 100%;
+  width: 15vw;
+  height: auto;
 }
 .experience .carousel .slides .slide .liste {
   display: flex;
@@ -292,8 +302,17 @@ main section .formation a h3 {
   transform: translateX(-700%);
 }
 
+#radio9:checked ~ .experience {
+  display: none;
+}
+
+#radio10:checked ~ .formation {
+  display: none;
+}
+
 aside {
   background-color: rgb(169, 204, 227);
   font-size: 1.2vw;
+  margin-right: 2vw;
   width: 100%;
 }/*# sourceMappingURL=style.css.map */

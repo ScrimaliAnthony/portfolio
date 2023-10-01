@@ -20,23 +20,30 @@ a {
 }
 
 img {
-    width: 75px;
-    height: 75px;
+    width: 4vw;
+    height: 4vw;
     object-fit: cover;
 }
 
+.radio-button {
+    display: none;
+}
+
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row-reverse;
     font-family: "Montserrat-Regular";
+    width: 100vw;
+    height: 100vh;
 
     .principal {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-content: space-between;
+        height: 100%;
     }
 }
 
@@ -44,11 +51,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    height: 10%;
-    width: 80%;
+    height: 14vw;
+    width: 66vw;
     align-items: center;
-    border: 4px solid $color1;
-    border-radius: 10px;
+    border: 0.25vw solid $color1;
+    border-radius: 1%;
 
     h1 {
         color: $color2;
@@ -59,6 +66,10 @@ header {
         color: $color2;
         font-size: 2vw;
     }
+
+    p {
+        font-size: 1.1vw;
+    }
 }
 
 main {
@@ -66,15 +77,15 @@ main {
     flex-direction: column;
     align-items: center;
 
-    .jsp {
+    .choix {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 80%;
+        width: 66vw;
         margin-top: 1vw;
         margin-bottom: 1vw;
         
-        .jsp2 {
+        .choix2 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -82,8 +93,8 @@ main {
             color: $color2;
             border: 1px solid black;
             padding: 1vw;
-            width: 50%;
-            border-radius: 15px;
+            width: 33vw;
+            border-radius: 15px;         
             
             &:hover {
                 box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -100,7 +111,7 @@ main {
 
 
         .formation {
-            width: 80%;
+            width: 60vw;
             display: flex;
             flex-direction: column;
             gap: 2vw;
@@ -113,6 +124,8 @@ main {
                 background-color: $color3;
                 transition: transform 1s;
                 padding: 1vw;
+                box-sizing: border-box;
+                border: 1px solid black;
                 
                 &:hover {
                     cursor: pointer;
@@ -125,6 +138,7 @@ main {
                     justify-content: start;
                     align-items: center;
                     width: 20%;
+                    font-size: 1.2vw;
                 }
                 
                 h3 {
@@ -142,13 +156,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    .radio-button {
-        display: none;
-    }
 
     .carousel {
-        width: 80%;
+        width: 66vw;
         height: 24vw;
         overflow: hidden;
         
@@ -210,15 +220,15 @@ main {
                     border-radius: 15px;
                     box-shadow: 3px 3px 5px 0px black, -3px -3px 5px 0px gray;
                     position: absolute;
-                    margin-top: 30%;
-                    width: 30%;
+                    margin-top: 27%;
                     
                     &:hover {
                         background-color: #a9a9a9;
                     }
                     
                     img {
-                        width: 100%;
+                        width: 15vw;
+                        height: auto;
                     }
                 }
                 
@@ -337,8 +347,17 @@ main {
     transform: translateX(-700%);
 }
 
+#radio9:checked ~ .experience {
+    display: none;
+}
+
+#radio10:checked ~ .formation {
+    display: none;
+}
+
 aside {
     background-color: $background-aside-color;
     font-size: 1.2vw;
+    margin-right: 2vw;
     width: 100%;
 }
