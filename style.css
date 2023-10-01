@@ -4,6 +4,8 @@
 }
 li, ul, ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -47,7 +49,7 @@ header {
   width: 64vw;
   align-items: center;
   border: 0.25vw solid rgb(43, 130, 196);
-  border-radius: 1%;
+  border-radius: 1vw;
 }
 header h1 {
   color: rgb(53, 79, 146);
@@ -80,10 +82,10 @@ main .choix .choix2 {
   align-items: center;
   font-size: 1.5vw;
   color: rgb(53, 79, 146);
-  border: 1px solid black;
+  border: 0.1vw solid black;
   padding: 1vw;
   width: 32vw;
-  border-radius: 15px;
+  border-radius: 1vw;
 }
 main .choix .choix2:hover {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -104,13 +106,13 @@ main section .formation {
 main section .formation a {
   display: flex;
   justify-content: space-between;
-  border-radius: 15px;
+  border-radius: 1vw;
   height: 10vw;
   background-color: #DEEBFF;
   transition: transform 1s;
   padding: 1vw;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 0.1vw solid black;
 }
 main section .formation a:hover {
   cursor: pointer;
@@ -155,21 +157,21 @@ main section .formation a h3 {
   flex: 0 0 100%;
   height: 23vw;
   justify-content: space-between;
-  border-radius: 15px;
+  border-radius: 1vw;
   background-color: #DEEBFF;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 0.1vw solid black;
 }
 .experience .carousel .slides .slide .site {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 1vw;
   width: 100%;
   height: 100%;
 }
 .experience .carousel .slides .slide .site:hover {
-  border-radius: 15px;
+  border-radius: 1vw;
   cursor: pointer;
   background-color: rgb(134, 161, 231);
 }
@@ -190,10 +192,12 @@ main section .formation a h3 {
 }
 .experience .carousel .slides .slide .github {
   background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 3px 3px 5px 0px black, -3px -3px 5px 0px gray;
+  border-radius: 1vw;
+  box-shadow: 0.1vw 0.1vw 0.2vw 0px black, -0.1vw -0.1vw 0.2vw 0px gray;
+  border: 0.2vw;
   position: absolute;
   margin-top: 27%;
+  height: 4.5vw;
 }
 .experience .carousel .slides .slide .github:hover {
   background-color: #a9a9a9;
@@ -236,12 +240,13 @@ main section .formation a h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 30%;
+  height: 5.5vw;
   flex-wrap: wrap;
 }
 .experience .carousel .slides .slide ul li {
-  transition: 2s;
+  transition: transform 2s;
   animation: rotation 6s linear;
+  height: 5.5vw;
 }
 @keyframes rotation {
   from {
@@ -263,7 +268,7 @@ main section .formation a h3 {
   font-size: 1.2vw;
   background-color: rgb(164, 164, 243);
   padding: 0.5vw;
-  border-radius: 5px;
+  border-radius: 0.5vw;
 }
 .experience .label .radio:hover {
   transform: scale(1.1);
@@ -312,5 +317,6 @@ main section .formation a h3 {
 
 aside {
   background-color: rgb(169, 204, 227);
-  font-size: 1.2vw;
+  font-size: 1.1vw;
+  padding: 1vw;
 }/*# sourceMappingURL=style.css.map */
