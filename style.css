@@ -23,13 +23,12 @@ img {
 }
 
 body {
-  overflow: hidden;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   font-family: "Montserrat-Regular";
-  width: 100vw;
   height: 100vh;
 }
 body .principal {
@@ -37,6 +36,7 @@ body .principal {
   flex-direction: column;
   align-content: space-between;
   height: 100%;
+  margin-right: 1vw;
 }
 
 header {
@@ -44,7 +44,7 @@ header {
   flex-direction: column;
   justify-items: center;
   height: 14vw;
-  width: 66vw;
+  width: 64vw;
   align-items: center;
   border: 0.25vw solid rgb(43, 130, 196);
   border-radius: 1%;
@@ -70,7 +70,7 @@ main .choix {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 66vw;
+  width: 64vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
@@ -82,7 +82,7 @@ main .choix .choix2 {
   color: rgb(53, 79, 146);
   border: 1px solid black;
   padding: 1vw;
-  width: 33vw;
+  width: 32vw;
   border-radius: 15px;
 }
 main .choix .choix2:hover {
@@ -137,7 +137,7 @@ main section .formation a h3 {
   align-items: center;
 }
 .experience .carousel {
-  width: 66vw;
+  width: 64vw;
   height: 24vw;
   overflow: hidden;
 }
@@ -313,6 +313,4 @@ main section .formation a h3 {
 aside {
   background-color: rgb(169, 204, 227);
   font-size: 1.2vw;
-  margin-right: 2vw;
-  width: 100%;
 }/*# sourceMappingURL=style.css.map */
