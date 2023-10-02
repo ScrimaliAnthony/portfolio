@@ -31,7 +31,7 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
   font-family: "Montserrat-Regular";
-  height: 100vh;
+  border: 1px solid black;
 }
 body .principal {
   display: flex;
@@ -67,6 +67,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 34.5vw;
 }
 main .choix {
   display: flex;
@@ -262,7 +263,7 @@ main section .formation a h3 {
 .experience .label {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
 }
 .experience .label .radio {
   font-size: 1.2vw;
@@ -319,4 +320,21 @@ aside {
   background-color: rgb(169, 204, 227);
   font-size: 1.1vw;
   padding: 1vw;
+}
+aside #profil {
+  display: flex;
+  justify-content: space-around;
+}
+aside #profil #photo {
+  width: 10vw;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+aside #profil #info {
+  display: flex;
+  flex-direction: column;
+}
+aside #profil #info p {
+  font-size: 1.5vw;
 }/*# sourceMappingURL=style.css.map */
